@@ -12,11 +12,7 @@ Obviously, I could have used PySpark or Polars for this - both are excellent too
 
 - **PySpark** felt like overkill for what's essentially a single-node task. Setting up Spark for a simple log parsing job seemed like bringing a tank to a knife fight. The overhead and complexity weren't justified for this use case.
 
-- **Polars** is great, but I wanted something even more lightweight with minimal dependencies. Also, this was a good excuse to finally learn and try Go .
-
-After some research, I decided to give Go a try for this problem. The results were amazing - Go's goroutines and efficient memory handling made processing the entire file not only possible, but fast. Plus, I ended up with a single, small binary with zero dependencies that I can run anywhere.
-
-This tool is the result of that experiment, and I'm sharing it in case other data engineers face similar challenges with large-scale log processing on a single machine.
+- **Polars** is great, but I wanted something even more lightweight with minimal dependencies. Also, this was a good excuse to finally try Go .
 
 ## What It Does
 
@@ -28,7 +24,7 @@ This tool is the result of that experiment, and I'm sharing it in case other dat
 
 ## Installation
 
-You'll need [Go](https://go.dev/dl/) installed (I'm using 1.25.0).
+I'm using Go 1.25.0.
 
 ```bash
 git clone https://github.com/amitzore71/go-concurrent-log-parser.git
