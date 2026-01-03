@@ -1,10 +1,10 @@
 # Go Concurrent Log Parser
 
-A high-performance log analysis tool that can handle massive log files (10GB+) without running out of memory.
+A high-performance log analysis tool that can handle massive log files (15GB++) without running out of memory.
 
 ## Why I Built This
 
-I'm a data analyst/engineer who primarily works in Python, but I hit a wall when trying to analyze a 10GB log file. Python's GIL prevented me from fully utilizing multiple CPU cores, and I kept running into out-of-memory errors even with chunked reading.
+I'm a data analyst/engineer who primarily works in Python, but I hit a wall when trying to analyze a 15GB+ log file. Python's GIL prevented me from fully utilizing multiple CPU cores, and I kept running into out-of-memory errors even with chunked reading.
 
 ### Why Not PySpark or Polars?
 
@@ -16,7 +16,7 @@ Obviously, I could have used PySpark or Polars for this - both are excellent too
 
 ## What It Does
 
-- Processes massive log files (tested with 10GB+) without memory issues
+- Processes massive log files (tested with 15GB++) without memory issues
 - Uses all available CPU cores through Go's goroutines
 - Finds and categorizes errors (`ERROR`, `FATAL`, `PANIC`, `EXCEPTION`, `FAILED`)
 - Streams the file line-by-line instead of loading everything into memory
