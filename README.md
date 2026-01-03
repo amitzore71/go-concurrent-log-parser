@@ -16,7 +16,7 @@ Obviously, I could have used PySpark or Polars for this - both are excellent too
 
 ## What It Does
 
-- Processes massive log files (tested with 15GB++) without memory issues
+- Processes massive log files (tested with 15GB+) without memory issues
 - Uses all available CPU cores through Go's goroutines
 - Finds and categorizes errors (`ERROR`, `FATAL`, `PANIC`, `EXCEPTION`, `FAILED`)
 - Streams the file line-by-line instead of loading everything into memory
