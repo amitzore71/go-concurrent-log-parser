@@ -1,6 +1,6 @@
 # Go Concurrent Log Parser
 
-A high-performance log analysis tool that can handle massive log files (15GB++) without running out of memory.
+A high-performance log analysis tool that can handle massive log files (15GB+) without running out of memory.
 
 ## Why I Built This
 
